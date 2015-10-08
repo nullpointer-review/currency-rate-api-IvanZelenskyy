@@ -2,7 +2,11 @@ package com.example;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
-
+/**
+ * Model class for currency data.
+ * Has String fields: code, rate, date.
+ * Fields code and rate could be parsed by unmarshalling xml from rest-services of Central Bank of Russia.
+ */
 @XmlRootElement(name="Valute")
 public class CurrencyRate {
 
